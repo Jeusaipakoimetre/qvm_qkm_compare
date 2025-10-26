@@ -14,6 +14,6 @@ Next, you can open the notebook (`code/qvm_qkm_compare.ipynb`), and run it in it
 
 The notebook shouldn't take long to run entirely because, by default, all "expensive" operations are disabled. Indeed, the result of these operations is already saved in different files in the `code` directory.
 
-If you want to compute new results with a new dataset/parameters, you should first change the options in the three "**Parameters**" categories (one global, and two for respectively QVM and QKM). You can change the data that are loaded, change the `IS_NEW_RUN` variable to compute and save the results, change the maximum size of data.
+If you want to compute new results with a new dataset/parameters, you should first change the options in the three "**Parameters**" sub-sections (one global, and two for respectively QVM and QKM). The code will automatically detect if this configurations has already been calculated, if so the corresponding file will be loaded instead of recalculating everything. You can always force an overwrite of this behavior by making the corresponding boolean equal to True in the "**Re-run**" section.
 
 Any new implementation (new dataset, new parameter change in the training) should use this parameter system so that the notebook keeps its ease of use and of modifications
